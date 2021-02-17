@@ -5,7 +5,7 @@ import MenuItem from "../menu-item/menu-item.component";
 
 import "./directory.styles.scss";
 
-const Directory = (props) => {
+const Directory = () => {
   const [sections, setSections] = useState(HOME_DATA);
 
   return (
