@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
 import "./App.css";
 
@@ -12,6 +12,7 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 
 const App = () => {
+  const currentUser = useSelector((state) => state.user.currentUser);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -43,7 +44,13 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/shop" component={ShopPage} />
-        <Route path="/signin" component={SignInAndSignUpPage} />
+        <Route
+          exact
+          path="/signin"
+          render={() =>
+            currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />
+          }
+        />
       </Switch>
     </div>
   );
