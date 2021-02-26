@@ -1,4 +1,4 @@
-import Reeact from "react";
+import React from "react";
 
 import Directory from "../../components/directory/directory.component";
 

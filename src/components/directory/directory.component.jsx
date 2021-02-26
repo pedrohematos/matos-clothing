@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import HOME_DATA from "./directory.data";
 
 import MenuItem from "../menu-item/menu-item.component";
@@ -6,7 +5,7 @@ import MenuItem from "../menu-item/menu-item.component";
 import "./directory.styles.scss";
 
 const Directory = () => {
-  const [sections, setSections] = useState(HOME_DATA);
+  const sections = HOME_DATA;
 
   return (
     <div className="directory-menu">

@@ -54,6 +54,8 @@ const SignUp = () => {
       case "confirmPassword":
         setConfirmPassword(value);
         break;
+      default:
+        break;
     }
   };
 

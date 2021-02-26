@@ -33,6 +33,8 @@ const SignIn = () => {
       case "password":
         setPassword(value);
         break;
+      default:
+        break;
     }
   };
 
