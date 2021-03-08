@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 const buttonStyles = css`
   background-color: black;
   color: white;
+  border: none;
 
   &:hover {
     background-color: white;
@@ -53,9 +54,18 @@ export const CustomButtonContainer = styled.button`
   font-family: "Open Sans Condensed";
   font-weight: bolder;
   cursor: pointer;
-  border: none;
   display: flex;
   justify-content: center;
 
   ${getButtonStyles}
+
+  @media screen and (max-width: 800px) {
+    min-width: 120px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 45px;
+    padding: 0 10px;
+    font-size: 15px;
+  }
 `;

@@ -8,10 +8,12 @@ export const CollectionItemContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
+
   &:hover {
     .image {
       opacity: 0.8;
     }
+
     button {
       opacity: 0.85;
       display: flex;
@@ -25,6 +27,7 @@ export const CollectionItemContainer = styled.div`
       .image {
         opacity: unset;
       }
+
       button {
         opacity: unset;
       }
@@ -70,6 +73,6 @@ export const NameContainer = styled.span`
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
+  width: 20%;
   text-align: right;
 `;
