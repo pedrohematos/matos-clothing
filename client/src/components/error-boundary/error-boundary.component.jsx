@@ -1,4 +1,5 @@
 import React from "react";
+import ErrorImage from "../../assets/error-boundary-image.png";
 
 import {
   ErrorImageOverlay,
@@ -28,7 +29,7 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasErrored) {
       return (
         <ErrorImageOverlay>
-          <ErrorImageContainer imageUrl="https://i.imgur.com/A040Lxr.png" />
+          <ErrorImageContainer imageUrl={ErrorImage} />
           <ErrorImageText>Sorry, this page is broken.</ErrorImageText>
         </ErrorImageOverlay>
       );

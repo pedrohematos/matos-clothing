@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import CustomButton from "../custom-button/custom-button.component";
 
 export const CollectionPreviewContainer = styled.div`
   display: flex;
@@ -29,4 +30,12 @@ export const PreviewContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
+`;
+
+export const AddButton = styled(CustomButton)`
+  margin: 40px 0;
+  width: 120px;
+  //display: block;
+  position: relative;
+  float: right;
 `;

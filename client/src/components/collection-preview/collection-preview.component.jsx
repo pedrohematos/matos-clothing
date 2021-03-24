@@ -7,6 +7,7 @@ import {
   CollectionPreviewContainer,
   TitleContainer,
   PreviewContainer,
+  AddButton,
 } from "./collection-preview.styles";
 
 const CollectionPreview = ({ title, items, history, match, routeName }) => (
@@ -21,6 +22,10 @@ const CollectionPreview = ({ title, items, history, match, routeName }) => (
           <CollectionItem key={item.id} item={item} />
         ))}
     </PreviewContainer>
+
+    <AddButton onClick={() => history.push(`${match.path}/${routeName}`)}>
+      More
+    </AddButton>
   </CollectionPreviewContainer>
 );
 
