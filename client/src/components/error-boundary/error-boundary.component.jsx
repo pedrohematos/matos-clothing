@@ -5,6 +5,7 @@ import {
   ErrorImageOverlay,
   ErrorImageContainer,
   ErrorImageText,
+  ErrorImageSubText,
 } from "./error-boundary.styles";
 
 class ErrorBoundary extends React.Component {
@@ -31,6 +32,7 @@ class ErrorBoundary extends React.Component {
         <ErrorImageOverlay>
           <ErrorImageContainer imageUrl={ErrorImage} />
           <ErrorImageText>Sorry, this page is broken.</ErrorImageText>
+          <ErrorImageSubText>Check your internet connection.</ErrorImageSubText>
         </ErrorImageOverlay>
       );
     }

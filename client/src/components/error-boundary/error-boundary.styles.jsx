@@ -30,3 +30,12 @@ export const ErrorImageText = styled.h2`
     font-size: 23px;
   }
 `;
+
+export const ErrorImageSubText = styled.h2`
+  margin: -15px;
+  font-size: 18px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 15px;
+  }
+`;
