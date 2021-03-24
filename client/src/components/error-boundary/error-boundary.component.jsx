@@ -32,7 +32,9 @@ class ErrorBoundary extends React.Component {
         <ErrorImageOverlay>
           <ErrorImageContainer imageUrl={ErrorImage} />
           <ErrorImageText>Sorry, this page is broken.</ErrorImageText>
-          <ErrorImageSubText>Check your internet connection.</ErrorImageSubText>
+          <ErrorImageSubText>
+            Check your internet connection and try to refresh the page.
+          </ErrorImageSubText>
         </ErrorImageOverlay>
       );
     }
