@@ -17,5 +17,4 @@ export const SignInTitle = styled.h2`
 
 export const ButtonsBarContainer = styled.div`
   display: flex;
-  justify-content: space-around;
 `;
